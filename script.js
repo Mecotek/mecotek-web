@@ -1,43 +1,49 @@
-// Animación inicial
-gsap.from(".portada h1", {
-  opacity: 0,
-  y: -50,
-  duration: 1.5,
-  delay: 0.3,
-  ease: "power3.out"
+// script.js
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Animar el trazo del SVG (dibujo)
+const paths = document.querySelectorAll("#plano path");
+
+paths.forEach(path => {
+  const length = path.getTotalLength();
+  path.style.strokeDasharray = length;
+  path.style.strokeDashoffset = length;
 });
 
-gsap.from(".portada p", {
-  opacity: 0,
-  y: 50,
-  duration: 1.5,
-  delay: 0.6,
-  ease: "power3.out"
+gsap.to(paths, {
+  strokeDashoffset: 0,
+  duration: 3,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".svg-section",
+    start: "top center",
+    end: "bottom top",
+    scrub: true,
+  }
 });
 
-gsap.from(".portada .boton", {
+// Animar contenido servicios y contacto
+gsap.from(".servicios h2, .servicios p, .servicios img", {
+  scrollTrigger: {
+    trigger: ".servicios",
+    start: "top 80%",
+  },
   opacity: 0,
-  scale: 0.8,
-  duration: 1.2,
-  delay: 1,
-  ease: "back.out(1.7)"
+  y: 40,
+  duration: 1,
+  stagger: 0.3,
+  ease: "power2.out",
 });
 
-// ScrollTrigger para secciones
-document.querySelectorAll(".pantalla").forEach((section, i) => {
-  if (i === 0) return; // saltamos portada
-
-  const elements = section.querySelectorAll("h2, p, li");
-
-  gsap.from(elements, {
-    scrollTrigger: {
-      trigger: section,
-      start: "top 80%",
-    },
-    opacity: 0,
-    y: 40,
-    duration: 1,
-    ease: "power2.out",
-    stagger: 0.2
-  });
+gsap.from(".contacto h2, .contacto p", {
+  scrollTrigger: {
+    trigger: ".contacto",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 40,
+  duration: 1,
+  stagger: 0.3,
+  ease: "power2.out",
 });

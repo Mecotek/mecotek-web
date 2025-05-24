@@ -1,216 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Mecotek - Diseño y planos CAD personalizados</title>
-<style>
-  /* Reset y estilos base */
-  * {
-    margin: 0; padding: 0; box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #0a0a0a;
-    color: #eee;
-    line-height: 1.6;
-  }
-  a {
-    color: #00ffff;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  header {
-    position: fixed;
-    width: 100%;
-    background: #111;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
-  }
-  .logo {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #00ffff;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 2px;
-  }
-  nav a {
-    margin-left: 2rem;
-    font-weight: 600;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  nav a:hover {
-    color: #0ff;
-  }
-  main {
-    max-width: 900px;
-    margin: 6rem auto 3rem auto;
-    padding: 0 1rem;
-  }
-  section {
-    margin-bottom: 4rem;
-  }
-  h1, h2 {
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    margin-bottom: 1rem;
-  }
-  h1 {
-    font-size: 2.5rem;
-    color: #00ffff;
-  }
-  h2 {
-    font-size: 2rem;
-    border-bottom: 2px solid #00ffff;
-    padding-bottom: 0.5rem;
-  }
-  p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: #ccc;
-  }
-  .btn-contact {
-    background: #00ffff;
-    color: #000;
-    padding: 0.75rem 1.5rem;
-    border-radius: 30px;
-    font-weight: 700;
-    cursor: pointer;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-    margin-top: 1rem;
-  }
-  .btn-contact:hover {
-    background: #00cccc;
-  }
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 1rem;
-  }
-  .gallery img {
-    width: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  .gallery img:hover {
-    transform: scale(1.05);
-  }
-  footer {
-    background: #111;
-    padding: 1rem 2rem;
-    text-align: center;
-    color: #666;
-    font-size: 0.9rem;
-    border-top: 1px solid #222;
-  }
-  /* Formulario */
-  form {
-    max-width: 400px;
-    margin-top: 1rem;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    border: none;
-    font-size: 1rem;
-  }
-  textarea {
-    resize: vertical;
-    min-height: 100px;
-  }
-  input[type="submit"] {
-    background: #00ffff;
-    color: #000;
-    border: none;
-    font-weight: 700;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  input[type="submit"]:hover {
-    background: #00cccc;
-  }
-  /* Scroll suave para los enlaces */
-  html {
-    scroll-behavior: smooth;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mecotek – Diseño y Fabricación 3D</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <div class="logo">MECOTEK</div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-<header>
-  <div class="logo">Mecotek</div>
-  <nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#galeria">Galería</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
-
-<main>
-  <section id="inicio">
-    <h1>Bienvenido a Mecotek</h1>
-    <p>Especialistas en diseño de piezas y planos CAD personalizados con SolidWorks. Ofrecemos soluciones precisas para tus proyectos industriales y creativos.</p>
-    <a href="#contacto" class="btn-contact">Contáctanos</a>
+  <section class="pantalla portada">
+    <h1>Diseñamos y fabricamos tus ideas en 3D</h1>
+    <p>Soluciones industriales personalizadas desde Galicia</p>
+    <a href="#servicios" class="boton">Ver servicios</a>
   </section>
 
-  <section id="servicios">
+  <section class="pantalla" id="servicios">
     <h2>Servicios</h2>
-    <p>En Mecotek diseñamos piezas únicas para tu empresa, adaptándonos a tus necesidades. Nuestros servicios incluyen:</p>
     <ul>
-      <li>Diseño 3D personalizado con SolidWorks 2025.</li>
-      <li>Creación de planos técnicos detallados.</li>
-      <li>Optimización para fabricación y prototipado rápido.</li>
-      <li>Asesoramiento técnico durante todo el proceso.</li>
+      <li>🛠️ Diseño de planos técnicos personalizados</li>
+      <li>💻 Modelado CAD con SolidWorks 2025</li>
+      <li>🖨️ Fabricación de piezas mediante impresión 3D</li>
     </ul>
   </section>
 
-  <section id="galeria">
-    <h2>Galería de planos</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/400x300?text=Plano+Ejemplo+1" alt="Plano ejemplo 1" />
-      <img src="https://via.placeholder.com/400x300?text=Plano+Ejemplo+2" alt="Plano ejemplo 2" />
-      <img src="https://via.placeholder.com/400x300?text=Plano+Ejemplo+3" alt="Plano ejemplo 3" />
-    </div>
+  <section class="pantalla" id="sobre">
+    <h2>Sobre mí</h2>
+    <p>Soy un diseñador industrial de Galicia. Trabajo con SolidWorks para ofrecer soluciones personalizadas a empresas que necesitan precisión y eficiencia, tanto en planos como en prototipado.</p>
   </section>
 
-  <section id="contacto">
+  <section class="pantalla" id="proyectos">
+    <h2>Proyectos</h2>
+    <p>Aquí mostraré algunos de mis diseños y piezas fabricadas. (Próximamente)</p>
+  </section>
+
+  <section class="pantalla" id="contacto">
     <h2>Contacto</h2>
-    <p>¿Quieres que diseñemos tus piezas o planos personalizados? Escríbenos o llámanos:</p>
-    <p>Teléfono: <a href="tel:+34633919002" style="color:#00ffff;">+34 633 919 002</a></p>
-    <p>Email: <a href="mailto:angelomilg@gmail.com" style="color:#00ffff;">angelomilg@gmail.com</a></p>
-    
-    <form id="contactForm" onsubmit="return enviarFormulario(event)">
-      <input type="text" name="nombre" placeholder="Tu nombre" required />
-      <input type="email" name="email" placeholder="Tu email" required />
-      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-      <input type="submit" value="Enviar" />
-    </form>
+    <p>📞 <a href="tel:+34633919002">+34 633 919 002</a><br>
+       📧 <a href="mailto:angelomilg@gmail.com">angelomilg@gmail.com</a></p>
+    <a href="https://wa.me/34633919002" class="boton">Escríbeme por WhatsApp</a>
   </section>
-</main>
 
-<footer>
-  &copy; 2025 Mecotek. Todos los derechos reservados.
-</footer>
-
-<script>
-  function enviarFormulario(event) {
-    event.preventDefault();
-    alert('Gracias por contactar con Mecotek. Te responderemos pronto.');
-    document.getElementById('contactForm').reset();
-  }
-</script>
-
+  <footer>
+    <p>© 2025 Mecotek. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>

@@ -1,64 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mecotek | Diseño de Piezas Industriales</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mecotek - Diseño y Planos 3D</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <div class="logo">Mecotek</div>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#sobre">Sobre mí</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
 
-  <section class="pantalla portada" id="inicio" data-aos="fade-up">
-    <h1>Diseño de piezas industriales y personalizadas</h1>
-    <p>Ofrezco planos técnicos, modelado CAD y fabricación en impresión 3D.</p>
-    <a href="#servicios" class="boton">Ver Servicios</a>
+  <section class="portada pantalla">
+    <h1>Mecotek</h1>
+    <p>Diseño de piezas y planos personalizados</p>
+    <button class="boton">Contactar</button>
   </section>
 
-  <section class="pantalla" id="servicios" data-aos="fade-right">
+  <!-- SVG animado -->
+  <section class="pantalla svg-section">
+    <svg id="plano" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" >
+      <!-- Aquí va el dibujo vectorial de la pieza en paths -->
+      <path d="M50 350 L550 350 L550 50 L50 50 Z" stroke="#333" stroke-width="3" fill="none"/>
+      <path d="M100 350 L100 100 L500 100" stroke="#333" stroke-width="2" fill="none"/>
+      <!-- Puedes añadir más paths para hacer el dibujo complejo -->
+    </svg>
+  </section>
+
+  <section class="pantalla servicios">
     <h2>Servicios</h2>
-    <ul>
-      <li>Diseño 3D personalizado (SolidWorks 2025)</li>
-      <li>Planos técnicos para fabricación</li>
-      <li>Prototipado rápido en impresión 3D</li>
-      <li>Asesoramiento técnico a empresas</li>
-    </ul>
+    <p>Diseño CAD, planos técnicos, impresión 3D...</p>
+    <img src="plano1.jpg" alt="Plano ejemplo" />
   </section>
 
-  <section class="pantalla" id="sobre" data-aos="fade-left">
-    <h2>Sobre mí</h2>
-    <p>Mi nombre es Ángel y me dedico al diseño industrial desde Galicia. Ayudo a empresas a transformar ideas en piezas reales, listas para fabricar o imprimir en 3D.</p>
-  </section>
-
-  <section class="pantalla" id="contacto" data-aos="fade-up">
+  <section class="pantalla contacto">
     <h2>Contacto</h2>
-    <p>📞 <strong>+34 633 919 002</strong></p>
-    <p>✉️ <strong>angelomilg@gmail.com</strong></p>
-    <p>Si necesitas un diseño a medida, no dudes en escribirme.</p>
+    <p>Teléfono: +34 633 919 002</p>
+    <p>Email: tecnicosmecotek@gmail.com</p>
   </section>
 
-  <footer data-aos="zoom-in">
-    <p>© 2025 Mecotek · Todos los derechos reservados</p>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>

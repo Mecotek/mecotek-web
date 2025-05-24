@@ -2,55 +2,57 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mecotek – Diseño y Fabricación 3D</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MECOTEK - Diseño de Piezas Industriales</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">MECOTEK</div>
-    <nav>
-      <a href="#servicios">Servicios</a>
-      <a href="#sobre">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
 
-  <section class="pantalla portada">
-    <h1>Diseñamos y fabricamos tus ideas en 3D</h1>
-    <p>Soluciones industriales personalizadas desde Galicia</p>
-    <a href="#servicios" class="boton">Ver servicios</a>
+  <nav>
+    <div class="logo">MECOTEK</div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#sobre">Sobre mí</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="pantalla portada" id="inicio" data-aos="fade-up">
+    <h1>Diseño de piezas industriales a medida</h1>
+    <p>Planos técnicos, modelado 3D y fabricación en impresión 3D</p>
+    <a href="#contacto" class="boton">Solicita tu diseño</a>
   </section>
 
-  <section class="pantalla" id="servicios">
+  <section class="pantalla" id="servicios" data-aos="fade-right">
     <h2>Servicios</h2>
     <ul>
-      <li>🛠️ Diseño de planos técnicos personalizados</li>
-      <li>💻 Modelado CAD con SolidWorks 2025</li>
-      <li>🖨️ Fabricación de piezas mediante impresión 3D</li>
+      <li>📐 Diseño de planos industriales personalizados</li>
+      <li>🧩 Modelado 3D con SolidWorks</li>
+      <li>🖨️ Fabricación mediante impresión 3D</li>
     </ul>
   </section>
 
-  <section class="pantalla" id="sobre">
+  <section class="pantalla" id="sobre" data-aos="fade-left">
     <h2>Sobre mí</h2>
-    <p>Soy un diseñador industrial de Galicia. Trabajo con SolidWorks para ofrecer soluciones personalizadas a empresas que necesitan precisión y eficiencia, tanto en planos como en prototipado.</p>
+    <p>Hola, soy Ángel, diseñador industrial con experiencia en el sector. Utilizo SolidWorks 2025 para crear piezas precisas, funcionales y adaptadas a tus necesidades.</p>
   </section>
 
-  <section class="pantalla" id="proyectos">
-    <h2>Proyectos</h2>
-    <p>Aquí mostraré algunos de mis diseños y piezas fabricadas. (Próximamente)</p>
-  </section>
-
-  <section class="pantalla" id="contacto">
+  <section class="pantalla" id="contacto" data-aos="fade-up">
     <h2>Contacto</h2>
-    <p>📞 <a href="tel:+34633919002">+34 633 919 002</a><br>
-       📧 <a href="mailto:angelomilg@gmail.com">angelomilg@gmail.com</a></p>
-    <a href="https://wa.me/34633919002" class="boton">Escríbeme por WhatsApp</a>
+    <p>📞 <strong>+34 633 919 002</strong></p>
+    <p>📩 <a href="mailto:angelomilg@gmail.com">angelomilg@gmail.com</a></p>
   </section>
 
-  <footer>
-    <p>© 2025 Mecotek. Todos los derechos reservados.</p>
+  <footer data-aos="zoom-in">
+    <p>&copy; 2025 MECOTEK. Todos los derechos reservados.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
